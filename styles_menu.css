@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.module {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 150px;
+}
+
+#container-menu {
+  padding: 10px;
+  text-align: center;
+}
+.item {
+  margin-left: -10px;
+}
+h1 {
+  padding: 50px;
+  text-align: center;
+}
+.row {
+  text-align: left;
+}
+.col-item {
+  padding: 10px;
+}
+img {
+  width: 100px;
+  border-radius: 10%;
+  height: 100px;
+}
+.price {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+@media only screen and (max-width: 760px) {
+  img {
+    height: 120%;
+    width: 60px;
+  }
+  .item {
+    margin-top: 7px;
+  }
+}

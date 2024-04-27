@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Slider using Flickity Plugin | HackerRahul.com</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link href="css/style.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+  </head>
+  <style media="screen">
+    .carousel-cell {
+      width: 60%;
+      counter-increment: gallery-cell;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    body {
+      background-color: white;
+    }
+    .w3-image {
+      border-radius: 3%;
+    }
+
+    /* cell number */
+    .carousel-cell:before {
+      display: block;
+    }
+  </style>
+  <body>
+    <!-- navbar -->
+    <div class="container-fluid p-0 nav-bar">
+      <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+        <a href="index.html" class="navbar-brand px-lg-4 m-0">
+          <!-- change the text type here -->
+          <h1 class="m-0 display-4 text-white">DosTea<sup>n</sup></h1>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav ml-auto p-4">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <!-- change href niche -->
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="service.html" class="nav-item nav-link">Service</a>
+            <!-- change href upar -->
+            <a href="menu.html" class="nav-item nav-link">Extra</a>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                >Menu</a
+              >
+              <div class="dropdown-menu text-capitalize">
+                <a href="reservation.html" class="dropdown-item">lorem</a>
+                <a href="testimonial.html" class="dropdown-item">lorem</a>
+              </div>
+            </div>
+            <!-- change href -->
+            <a href="contact.html" class="nav-item nav-link active"
+              >Contact us</a
+            >
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <h1 class="w3-center" style="color: aliceblue">Image Gallery</h1>
+    <div
+      class="carousel"
+      data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'
+    >
+      <div class="carousel-cell">
+        <img class="w3-image" src="image/IMG-20230112-WA0082.jpg" />
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image" src="image/IMG-20230112-WA0083.jpg" />
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image" src="image/IMG-20230112-WA0084.jpg" />
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image" src="image/IMG-20230112-WA0086.jpg" />
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image" src="image/IMG-20230112-WA0087.jpg" />
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image" src="image/IMG-20230112-WA0088.jpg" />
+      </div>
+
+      <div class="carousel-cell">
+        <img class="w3-image" src="image/IMG-20230112-WA0090.jpg" />
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>
